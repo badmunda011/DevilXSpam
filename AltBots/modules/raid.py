@@ -155,7 +155,7 @@ async def drraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
-async def mraid(e):
+async def lraid(e):
     if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
 
