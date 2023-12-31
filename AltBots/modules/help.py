@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"ʙᴏᴛxꜱᴩᴀᴍ ʜᴇʟᴩ ᴍᴇɴᴜ ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @GhostRadha**"
+HELP_STRING = f"ᴅᴇᴠɪʟ𝘅ꜱᴩᴀᴍ ʜᴇʟᴩ ᴍᴇɴᴜ ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @ll_mxn_ll**"
 
 HELP_BUTTON = [
     [
@@ -14,8 +14,7 @@ HELP_BUTTON = [
       Button.inline("• ᴇxᴛʀᴀ •", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/RadhaX2Update"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/RadhaX2Support")
+      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/Devils_Hell_0")
     ]
   ]
 
@@ -60,7 +59,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @GhostRadha**
+**© @ll_mxni_ll**
 """
 
                  
@@ -92,7 +91,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @GhostRadha**
+**© @ll_mxni_ll**
 """
 
 spam_msg = f"""
@@ -109,7 +108,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-** © @GhostRadha**
+** © @ll_mxni_ll**
 """                     
            
            
@@ -142,7 +141,7 @@ async def helpback(event):
             ]
           )
     else:
-        await event.answer("Make Your Own Spam Bots !! @GhostRadha", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -161,7 +160,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("Make Your Own Spam Bots !! @GhostRadha", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -180,7 +179,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Spam Bots !! @GhostRadha", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +198,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Spam Bots !! @MissRadha", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
