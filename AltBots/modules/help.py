@@ -78,9 +78,9 @@ raid_msg = f"""
   1) {hl}drraid <replying to user>
   2) {hl}drraid <username>
 
-𝐌𝐑𝐚𝐢𝐝: **ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.**
-  1) {hl}mraid <count> <username>
-  2) {hl}mraid <count> <reply to user>
+𝐋𝐑𝐚𝐢𝐝: **ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.**
+  1) {hl}lraid <count> <username>
+  2) {hl}lraid <count> <reply to user>
 
 𝐒𝐑𝐚𝐢𝐝: **ꜱʜᴀʏᴀʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.**
   1) {hl}sraid <count> <username>
