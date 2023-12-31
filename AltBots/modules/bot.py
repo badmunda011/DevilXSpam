@@ -26,6 +26,7 @@ async def ping(e):
         mp = (end - start).microseconds / 1000
         await altron.edit(f"__⚡ ᴘɪɴɢ__\n» `{mp} ᴍꜱ`")
 PING_BTNS = [
+             Button.url("🍃𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑🍃","https://t.me/ll_mxni_ll")
     
 
 
