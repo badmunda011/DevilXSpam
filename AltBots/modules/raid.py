@@ -144,6 +144,75 @@ async def drraid(e):
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+async def pbraid(e):
+    if e.sender_id in SUDO_USERS:
+        mkrr = e.text.split(" ", 1)
+        if len(mkrr) == 2:
+            entity = await e.client.get_entity(mkrr[1])
+
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            entity = await e.client.get_entity(a.sender_id)
+
+        try:
+            user_id = entity.id
+            if user_id in ALTRON:
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ʀᴀᴅʜᴀ'ꜱ ᴏᴡɴᴇʀ.")
+            elif user_id == OWNER_ID:
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ.")
+            elif user_id in SUDO_USERS:
+                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ.")
+            else:
+                global PBREPLYRAID
+                check = f"{user_id}_{e.chat_id}"
+                if check not in PBREPLYRAID:
+                    PBREPLYRAID.append(check)
+                await e.reply("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴘʙɪ ʀᴇᴘʟʏʀᴀɪᴅ !! ⚡")
+        except NameError:
+            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐏𝐛𝐢𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}pbraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}pbraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+async def dpbraid(e):
+    if e.sender_id in SUDO_USERS:
+        text = e.text.split(" ", 1)
+
+        if len(text) == 2:
+            entity = await e.client.get_entity(text[1])
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            entity = await e.client.get_entity(a.sender_id)
+
+        try:
+            check = f"{entity.id}_{e.chat_id}"
+            global PBREPLYRAID
+            if check in PBREPLYRAID:
+                PBREPLYRAID.remove(check)
+            await e.reply("» ᴘʙɪ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ !! ⚡")
+        except NameError:
+            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐏𝐛𝐢𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}dpbraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}dpbraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+
+
+
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
