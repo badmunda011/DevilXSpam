@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"ᴅᴇᴠɪʟ𝘅ꜱᴩᴀᴍ ʜᴇʟᴩ ᴍᴇɴᴜ ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @ll_mxn_ll**"
+HELP_STRING = f"ᴅᴇᴠɪʟ𝘅ꜱᴩᴀᴍ ʜᴇʟᴩ ᴍᴇɴᴜ ⚡\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)**"
 
 HELP_BUTTON = [
     [
@@ -33,7 +33,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://te.legra.ph/file/2ccae3cb7e3415e598100.jpg",
+              "https://te.legra.ph/file/14cae945724db337af46b.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -59,7 +59,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @ll_mxni_ll**
+**© [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)**
 """
 
                  
@@ -91,7 +91,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @ll_mxni_ll**
+**© [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)**
 """
 
 spam_msg = f"""
@@ -108,7 +108,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-** © @ll_mxni_ll**
+** © [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)**
 """                     
            
            
@@ -141,7 +141,7 @@ async def helpback(event):
             ]
           )
     else:
-        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -160,7 +160,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -179,7 +179,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -198,4 +198,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Spam Bots !! @ll_mxni_ll", cache_time=0, alert=True)
+        await event.answer("Make Your Own Spam Bots !! [𝐌ᴀɴɪ ❤️‍🔥](https://t.me/ll_mxni_ll)", cache_time=0, alert=True)
