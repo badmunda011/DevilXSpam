@@ -20,6 +20,9 @@ ECHO = []
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
 async def echo(event):
     if event.sender_id in SUDO_USERS:
         if event.reply_to_msg_id:
@@ -60,6 +63,9 @@ async def echo(event):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def rmecho(event):
     if event.sender_id in SUDO_USERS:
         if event.reply_to_msg_id:
@@ -92,6 +98,9 @@ async def rmecho(event):
 @X8.on(events.NewMessage(incoming=True))
 @X9.on(events.NewMessage(incoming=True))
 @X10.on(events.NewMessage(incoming=True))
+@X11.on(events.NewMessage(incoming=True))
+@X12.on(events.NewMessage(incoming=True))
+@X13.on(events.NewMessage(incoming=True))
 async def _(e):
     global ECHO
     check = f"{e.sender_id}_{e.chat_id}"
