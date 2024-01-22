@@ -204,6 +204,9 @@ async def help_raid(event):
 @X8.on(events.CallbackQuery(pattern=r"extra"))
 @X9.on(events.CallbackQuery(pattern=r"extra"))
 @X10.on(events.CallbackQuery(pattern=r"extra"))
+@X11.on(events.CallbackQuery(pattern=r"extra"))
+@X12.on(events.CallbackQuery(pattern=r"extra"))
+@X13.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
