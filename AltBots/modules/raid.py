@@ -20,6 +20,9 @@ REPLY_RAID = []
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 async def raid(e):
     if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
@@ -65,6 +68,9 @@ async def raid(e):
 @X8.on(events.NewMessage(incoming=True))
 @X9.on(events.NewMessage(incoming=True))
 @X10.on(events.NewMessage(incoming=True))
+@X11.on(events.NewMessage(incoming=True))
+@X12.on(events.NewMessage(incoming=True))
+@X13.on(events.NewMessage(incoming=True))
 async def _(event):
     global REPLY_RAID
     check = f"{event.sender_id}_{event.chat_id}"
@@ -87,6 +93,9 @@ async def _(event):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 async def rraid(e):
     if e.sender_id in SUDO_USERS:
         mkrr = e.text.split(" ", 1)
@@ -125,6 +134,9 @@ async def rraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 async def drraid(e):
     if e.sender_id in SUDO_USERS:
         text = e.text.split(" ", 1)
@@ -154,6 +166,9 @@ async def drraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 async def pbraid(e):
     if e.sender_id in SUDO_USERS:
         mkrr = e.text.split(" ", 1)
@@ -192,6 +207,9 @@ async def pbraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 async def dpbraid(e):
     if e.sender_id in SUDO_USERS:
         text = e.text.split(" ", 1)
@@ -224,6 +242,9 @@ async def dpbraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 async def lraid(e):
     if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
@@ -262,6 +283,9 @@ async def lraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
 async def sraid(e):
      if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
@@ -300,6 +324,9 @@ async def sraid(e):
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
 async def craid(e):
     if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
