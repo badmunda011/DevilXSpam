@@ -19,6 +19,9 @@ from telethon.errors import ForbiddenError
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%slogs(?: |$)(.*)" % hl))
 async def logs(legend):
     if legend.sender_id == OWNER_ID:
         if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
