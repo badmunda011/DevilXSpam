@@ -7,7 +7,7 @@ import urllib3
 
 
 from pathlib import Path
-from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
+from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12, X13
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
@@ -46,6 +46,9 @@ async def main():
     await X8.run_until_disconnected()
     await X9.run_until_disconnected()
     await X10.run_until_disconnected()
+    await X11.run_until_disconnected()
+    await X12.run_until_disconnected()
+    await X13.run_until_disconnected()
 
 
 loop = asyncio.get_event_loop()
