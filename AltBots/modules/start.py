@@ -25,6 +25,9 @@ START_BUTTON = [
 @X8.on(events.NewMessage(pattern="/start"))
 @X9.on(events.NewMessage(pattern="/start"))
 @X10.on(events.NewMessage(pattern="/start"))
+@X11.on(events.NewMessage(pattern="/start"))
+@X12.on(events.NewMessage(pattern="/start"))
+@X13.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
         AltBot = await event.client.get_me()
