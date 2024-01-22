@@ -29,6 +29,9 @@ HELP_BUTTON = [
 @X8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 @X9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@X11.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@X12.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@X13.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
@@ -122,6 +125,9 @@ spam_msg = f"""
 @X8.on(events.CallbackQuery(pattern=r"help_back"))
 @X9.on(events.CallbackQuery(pattern=r"help_back"))
 @X10.on(events.CallbackQuery(pattern=r"help_back"))
+@X11.on(events.CallbackQuery(pattern=r"help_back"))
+@X12.on(events.CallbackQuery(pattern=r"help_back"))
+@X13.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(
@@ -154,6 +160,9 @@ async def helpback(event):
 @X8.on(events.CallbackQuery(pattern=r"spam"))
 @X9.on(events.CallbackQuery(pattern=r"spam"))
 @X10.on(events.CallbackQuery(pattern=r"spam"))
+@X11.on(events.CallbackQuery(pattern=r"spam"))
+@X12.on(events.CallbackQuery(pattern=r"spam"))
+@X13.on(events.CallbackQuery(pattern=r"spam"))
 async def help_spam(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(spam_msg,
@@ -173,6 +182,9 @@ async def help_spam(event):
 @X8.on(events.CallbackQuery(pattern=r"raid"))
 @X9.on(events.CallbackQuery(pattern=r"raid"))
 @X10.on(events.CallbackQuery(pattern=r"raid"))
+@X11.on(events.CallbackQuery(pattern=r"raid"))
+@X12.on(events.CallbackQuery(pattern=r"raid"))
+@X13.on(events.CallbackQuery(pattern=r"raid"))
 async def help_raid(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
