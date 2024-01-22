@@ -4,7 +4,7 @@ import base64
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
+from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12 ,X13, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
 from AltBots.data import ALTRON
 
 ECHO = []
